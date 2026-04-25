@@ -1,1 +1,35 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Owner RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="wall" style="top:0; left:390px; width:20px; height:600px;"></div>
+        <div class="wall" style="top:290px; left:0; width:800px; height:20px;"></div>
+        <div class="room-label" style="top:20px; left:20px;">Sprint Planning</div>
+        <div class="room-label" style="top:20px; left:420px;">Stakeholder Meeting</div>
+        <div class="room-label" style="top:320px; left:20px;">Roadmap Strategy</div>
+        <div class="room-label" style="top:320px; left:420px;">Team Desk</div>
+        <div id="player"></div>
+        <div id="ui-layer">
+            <div class="stat-box">
+                Score: <span id="score-val">0</span>
+            </div>
+            <div class="stat-box">
+                Progress
+                <div id="progress-container"><div id="progress-bar"></div></div>
+            </div>
+        </div>
+        <div id="modal" class="modal-overlay">
+            <div id="modal-content" class="card">
+                <!-- Dynamic Content via JS -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
